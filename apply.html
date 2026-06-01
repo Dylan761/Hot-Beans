@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Application</title>
+    <link rel="icon" type="image/x-icon" href="images/Transparent Logo.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <TD WIDTH="100%"><img src="Images/hot beans.png" width="100%">  
+</table>
+    <header>
+        </header>
+        <nav class="navbar">
+            <img src="images/Transparent Logo.png" alt="Hot Beans Logo" class="nav-logo">
+            <a href="index.html"><h2>Home</h2></a>
+            <a href="staff.html"><h2>Staff</h2></a>
+            <a href="Jobs.html"><h2>Job Specifications</h2></a>
+            <a href="apply.html"><h2>Application Form</h2></a>
+            <a href="courses.html"><h2>Online Courses</h2></a>
+            </nav>
+            <script src="scripts/navbar_shrink.js"></script>
+        
+        <main>
+            <h1>Application Form Below</h1>
+            <h2 Class="homepagetext">Apply for a Job </h2>
+            <form id="applicationForm" class="application-form">
+
+
+                <section class="form-section">
+                    <div class="section-title">
+                        <h2>Personal Information</h2>
+                        <span></span>
+                    </div>
+           
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullname">Full Name <span>*</span></label>
+                            <input type="text" id="fullname" placeholder="e.g. Phillip Hannon" required>
+                        </div>
+           
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span>*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+           
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" placeholder="application-forms@hotbeans.co.uk" required>
+                        </div>
+           
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span>*</span></label>
+                            <input type="tel" id="phone" placeholder="+44 7700 000000" required>
+                        </div>
+           
+                        <div class="form-group full-width">
+                            <label for="address">Address <span>*</span></label>
+                            <textarea id="address" rows="3" placeholder="Street address, city, postcode" required></textarea>
+                        </div>
+                    </div>
+                </section>
+           
+                <section class="form-section">
+                    <div class="section-title">
+                        <h2>Position Details</h2>
+                        <span></span>
+                    </div>
+           
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="job">Job Opening <span>*</span></label>
+                            <select id="job" required>
+                                <option value="">Select a job opening</option>
+                                <option value="Lead Developer">Lead Developer</option>
+                                <option value="Senior Developer">Senior Developer</option>
+                                <option value="Junior Developer">Junior Developer</option>
+                                <option value="Apprentice Developer">Apprentice Developer</option>
+                            </select>
+                        </div>
+           
+                        <div class="form-group">
+                            <label for="cv">Attach a CV <span>*</span></label>
+                            <input type="file" id="cv" accept=".pdf,.doc,.docx" required>
+                        </div>
+           
+                        <div class="form-group full-width">
+                            <label for="why">Why do you want to work here? <span>*</span></label>
+                            <textarea id="why" rows="5" placeholder="Write your answer here..." required></textarea>
+                        </div>
+                    </div>
+                </section>
+           
+                <button type="submit" class="submit-btn">Submit Application</button>
+           
+            </form>
+           
+            <div id="result"></div>
+       
+            <!-- Link to JavaScript file -->
+            <script src="scripts/applicationform.js"></script>
+           
+            
+        </main>
+        <footer>
+            <TABLE class="copyright" BORDER="4" WIDTH="20%">
+                <TD WIDTH="50%" ROWSPAN="4"><h3>©Hot Beans 2026-2027</h3></TD>
+
+        </footer>
+</body>
+</html>

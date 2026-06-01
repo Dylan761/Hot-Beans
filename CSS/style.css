@@ -1,0 +1,274 @@
+body {
+    background-color: #F4CC98;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+table {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0;
+}
+.banner {
+    width: 100%;
+    display: block;
+    transition: height 0.3s ease, transform 0.3s ease;
+}
+.shrink-banner {
+    transform: scale (0.85);
+    opacity: 1;
+ 
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FD4521;
+    padding: 20px 0;
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    z-index: 999;
+}
+ 
+.navbar.shrink {
+    padding: 6px 0;
+    background-color: #FD4521;
+}
+ 
+.nav-logo {
+    height: 80px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+ 
+.navbar.shrink .nav-logo {
+    height: 45px;
+}
+ 
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+ 
+.navbar a h2 {
+    font-size: 24px;
+    margin: 0;
+    transition: font-size 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+ 
+.navbar.shrink a h2 {
+    font-size: 16px;
+}
+ 
+.navbar a:hover h2 {
+    color: #000000;
+    transform: scale(1.1);
+}
+.homepagetext {
+    text-align: center;
+}
+td {
+    background-color: #FD4521;
+    font-family: arial, sans-serif;
+    font-size: 30px;
+}
+main {
+    background-color: #F4CC98;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+.copyright {
+    text-align: center;
+    background-color: #FD4521;
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #F4CC98;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav-logo {
+    height: 80px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0px;
+}
+.jobs {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+ 
+details {
+    margin-bottom: 15px;
+    border: 2px solid #6b3f22;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #FD4521;
+}
+ 
+summary {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4b2e1f;
+}
+ 
+summary:hover {
+    color: #8b4513;
+}
+ 
+details p {
+    line-height: 1.6;
+}
+ 
+details ul {
+    margin-left: 20px;
+}
+.application-form {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    background-color: #FD4521;
+    border-top: 4px solid #000000;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+ 
+.form-section {
+    margin-bottom: 32px;
+}
+ 
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+ 
+.section-title h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #000000;
+}
+ 
+.section-title span {
+    flex: 1;
+    height: 1px;
+    background-color: #000000;
+}
+ 
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 24px;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.full-width {
+    grid-column: span 2;
+}
+ 
+label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+ 
+label span {
+    color: #000000;
+}
+ 
+input,
+select,
+textarea {
+    padding: 12px 14px;
+    border: 1px solid #020202;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    border-radius: 2px;
+    outline: none;
+    box-sizing: border-box;
+}
+ 
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+ 
+textarea {
+    resize: vertical;
+}
+ 
+.submit-btn {
+    margin-top: 10px;
+    padding: 13px 24px;
+    border-color: #000000;
+    background-color: #FFB240;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+}
+ 
+.submit-btn:hover {
+    border-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+}
+ 
+#result {
+    max-width: 900px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #FFB240;
+    color: #000000;
+}
+ 
+/* Makes it fit better on phones */
+@media screen and (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+ 
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .full-width {
+        grid-column: span 1;
+    }
+}
